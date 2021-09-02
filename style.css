@@ -1,0 +1,75 @@
+/* default Margin And backgroundColor */
+
+body {
+  margin: 5%;
+  background-color: #e1dcc5;
+}
+
+/* Total Number to search Results styling */
+
+#total-books {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 5px;
+}
+
+/* display option for loading spinner */
+
+#spinner {
+  display: none;
+}
+
+/* Search Area Container Hover Options */
+
+.container:hover,
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.8s ease-in-out;
+  box-shadow: 15px 15px 5px gray;
+}
+
+/* Search Results Display Options */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 4.5rem;
+}
+
+/* Result Card Display styling */
+
+.card {
+  background-size: cover;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  max-width: 80%;
+  max-height: 480px;
+}
+
+/* Result Card content styling */
+
+.card-content {
+  margin-top: 10rem;
+  padding: 1.5rem;
+}
+
+/* Card Content Display hidden before hover */
+
+.card-content {
+  display: none;
+}
+
+.card:hover .card-content {
+  display: block;
+}
+
+/* Image opacity for hover Options */
+
+.card:hover .card-img {
+  opacity: 0.3;
+  transition: 0.5s;
+}
